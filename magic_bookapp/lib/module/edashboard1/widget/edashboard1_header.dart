@@ -10,7 +10,7 @@ class EDashboard1Header extends StatelessWidget {
     Widget header() {
       return Container(
         margin: EdgeInsets.only(
-          top: 30,
+          top: 20,
           left: 30,
           right: 30,
         ),
@@ -21,23 +21,25 @@ class EDashboard1Header extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   SizedBox(
-                    height: 28,
+                    height: 25,
                   ),
                   Text(
                     'Shop',
                     style: TextStyle(
                       fontSize: 36,
                       fontWeight: FontWeight.bold,
+                      overflow: TextOverflow.ellipsis,
                     ),
                   ),
                   SizedBox(
-                    height: 10,
+                    height: 2,
                   ),
                   Text(
                     'Over 45K Items Available for You',
                     style: TextStyle(
                       color: Color(0xff455154),
                       fontSize: 14,
+                      overflow: TextOverflow.ellipsis,
                     ),
                   ),
                 ],
